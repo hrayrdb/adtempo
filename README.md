@@ -1,2 +1,2 @@
-# adtempo
-Website
+# AdTempo
+Website for an agency.
