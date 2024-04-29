@@ -6152,12 +6152,13 @@ select {
   width: 4px;
   height: 4px;
   border-radius: 100%;
-  background-color: rgba(104, 104, 104, 0.5);
+  /* background-color: rgba(104, 104, 104, 0.5); */
+  background-color: rgb(255, 255, 255);
   transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .slider__dot_active:after {
-  background-color: var(--color-dark-1);
+  background-color: var(--color-gray-1);
 }
 
 @media screen and (max-width: 767px) {
@@ -6181,7 +6182,7 @@ select {
   color: #fff;
 }
 .slider[data-arts-theme-text=dark] .slider__counter_total {
-  color: var(--color-gray-1);
+  color: var(--color-white-1);
 }
 .slider[data-arts-theme-text=dark] a {
   color: #fff;
