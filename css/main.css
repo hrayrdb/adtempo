@@ -144,6 +144,7 @@
   --color-gray-1: #888888;
   --color-gray-2: #cccccc;
   --color-gray-3: #484848;
+  --color-pierre4ad: #7cc7c2;
   /* XL heading */
   --xl-max-font-size: 188;
   --xl-min-font-size: 54;
@@ -537,6 +538,10 @@ a:hover {
 
 .bg-gray-3 {
   background-color: var(--color-gray-3) !important;
+}
+
+.bg-pierre4ad {
+  background-color: var(--color-pierre4ad) !important;
 }
 /*!========================================================================
  * 4. Bootstrap Layout
