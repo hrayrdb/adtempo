@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Meet The Team</title>
+  <title>AdTempo | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta content="telephone=no" name="format-detection" />
   <meta name="HandheldFriendly" content="true" />
-  <meta name="description" content="AdTempo, Meet the Team" />
+  <meta name="description" content="AdTempo" />
   <!-- Google Fonts -->
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
@@ -39,6 +39,7 @@
 
 <body>
   <div data-barba="wrapper">
+    <!-- PAGE PRELOADER -->
     <div class="preloader text-center bg-dark-1" id="js-preloader" data-arts-theme-text="light">
       <div class="preloader__content">
         <!-- header -->
@@ -47,7 +48,8 @@
           <!-- <div class="preloader__subline small-caps mt-1">Creative Studio</div> -->
           <img src="img/Logo.webp" alt="AdTempo Logo">
         </div>
-
+        <!-- - header -->
+        <!-- counter -->
         <div class="preloader__counter h5"><span
             class="preloader__counter-number preloader__counter-current">0</span><span
             class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
@@ -57,57 +59,76 @@
         <div class="preloader__circle"></div>
       </div>
     </div>
+    <!-- - PAGE PRELOADER -->
+    <!-- Loading Spinner -->
     <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66"
       xmlns="http://www.w3.org/2000/svg">
       <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
     </svg>
+    <!-- - Loading Spinner -->
+    <!-- Transition Curtain-->
+    <!-- TRANSITION CURTAINS -->
+    <!-- page curtain AJAX transition -->
     <div class="curtain transition-curtain" id="js-page-transition-curtain">
       <div class="curtain__wrapper-svg">
         <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
           <path class="curtain-svg__normal"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
           </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
           <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
             d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
           </path>
           <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
             d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
           </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
           <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
           </path>
           <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
           </path>
+          <!-- - Curve Bottom -->
         </svg>
       </div>
     </div>
+    <!-- - page curtain AJAX transition -->
+    <!-- header curtain show/hide -->
     <div class="header-curtain curtain" id="js-header-curtain">
       <div class="curtain__wrapper-svg">
         <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
           <path class="curtain-svg__normal"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
           </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
           <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
             d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
           </path>
           <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
             d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
           </path>
-
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
           <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
           </path>
           <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
             d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
           </path>
-
+          <!-- - Curve Bottom -->
         </svg>
       </div>
     </div>
-
+    <!-- - header curtain show/hide -->
+    <!-- header curtain AJAX transition -->
     <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
       <div class="curtain__wrapper-svg">
         <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
@@ -136,9 +157,12 @@
         </svg>
       </div>
     </div>
-
+    <!-- - header curtain AJAX transition -->
+    <!-- - TRANSITION CURTAINS -->
+    <!-- Cursor Follower-->
     <div class="cursor" id="js-cursor">
       <div class="cursor__wrapper">
+        <!-- circles -->
         <div class="cursor__follower">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
@@ -146,29 +170,39 @@
               style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
           </svg>
         </div>
+        <!-- - circles -->
+        <!-- arrows -->
         <div class="cursor__arrows">
           <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
           <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
           <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
           <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
         </div>
+        <!-- - arrows -->
+        <!-- label holder -->
         <div class="cursor__label"></div>
+        <!-- - label holder -->
+        <!-- icon holder -->
         <div class="cursor__icon material-icons"></div>
+        <!-- - icon holder -->
       </div>
     </div>
+    <!-- - Cursor Follower-->
     <!-- PAGE HEADER -->
     <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
-      data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary"
+      data-arts-theme-text="light" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary"
       data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
       data-arts-header-overlay-background="#ffffff">
+      <!-- top bar -->
       <div class="header__container header__controls">
         <div class="row justify-content-between align-items-center">
+          <!-- logo -->
           <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
               <div class="logo__wrapper-img">
                 <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
-                  src="img/general/logo-black.svg" alt="Rhye HTML5 Template" height="20" />
+                  src="img/general/logo-black.svg" alt="AdTempo" height="20" />
                 <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
-                  src="img/general/logo-white.svg" alt="Rhye HTML5 Template" height="20" />
+                  src="img/general/logo-white.svg" alt="AdTempo" height="20" />
               </div>
             </a>
           </div>
@@ -424,28 +458,6 @@
               </ul>
             </li>
             <li class="menu-item-has-children"><a class="h2" href="#" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Albums
-                </div>
-              </a>
-              <ul class="sub-menu">
-                <li><a class="h3" href="albums-list-reveal.html" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Mouse
-                      Hover Reveal</div>
-                  </a>
-                </li>
-                <li><a class="h3" href="albums-list-covers.html" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">List
-                      Covers</div>
-                  </a>
-                </li>
-                <li><a class="h3" href="albums-slider-covers.html" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Slider
-                      Covers</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children"><a class="h2" href="#" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Blog</div>
               </a>
               <ul class="sub-menu">
@@ -607,7 +619,7 @@
               <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">
                 Contacts</div>
               <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                <p>info@ad-tempo.com <br> +971 50-334-7813<br />
+                <p>info@ad-tempo.com<br />+971 50-334-7813<br />
                 </p>
               </div>
             </div>
@@ -617,7 +629,7 @@
               <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Office
               </div>
               <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                <p>Dubai | UAE
+                <p>Dubai | UAE<br />
                 </p>
               </div>
             </div>
@@ -638,13 +650,60 @@
       </div>
       <!-- - fullscreen overlay container -->
     </header>
-
+    <!-- - PAGE HEADER -->
+    <!-- PAGE MAIN -->
     <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
       <main class="page-wrapper__content">
+        <!-- section MASTHEAD -->
+        <section class="section section-masthead section-fullheight text-center text-lg-center pt-large pt-md-0"
+          data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+          <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
+            <div class="row no-gutters h-100 align-items-center justify-content-center">
+              <div class="col-lg-6">
+                <div class="container-fluid container-fluid_paddings h-100 container_py-xs-0">
+                  <div class="row align-items-center h-100">
+                    <div class="col">
+                      <header class="section-masthead__header justify-content-center">
+                        <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                          data-split-text-type="lines,words" data-split-text-set="words"><span>Creative
+                            Agency </span></div>
+                        <div class="w-100"></div>
+                        <div class="section-masthead__heading split-text js-split-text"
+                          data-split-text-type="lines,words" data-split-text-set="words">
+                          <h1 style="color: whitesmoke;" class="h1 mt-0 mb-0">About</h1>
+                        </div>
+                        <div class="section-masthead__heading split-text js-split-text overflow"
+                          data-split-text-type="lines,chars" data-split-text-set="chars">
+                          <img src="img/Logo.webp" height="600" width="600" alt="AdTempo Logo">
+
+                        </div>
+                      </header>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6 align-self-stretch">
+                    <div
+                        class="section-image section-masthead__background section-masthead__background_halfscreen section-masthead__background_halfscreen-gutters mt-small mt-md-0">
+                        <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax"
+                            data-arts-parallax-factor="0.15">
+                            <div class="js-transition-img__transformed-el">
+                                <div class="lazy-bg" data-src="img/logo.webp"></div>
+                            </div>
+                        </div>
+                        <div class="section-masthead__bg bg-pierre4ad"></div>
+                    </div>
+                </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- - section MASTHEAD -->
+        <!-- section CONTENT #1 -->
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <section class="section section-content clearfix pt-medium pb-small text-center"
+            <div class="col-lg-10">
+              <section class="section section-content clearfix pt-medium text-center"
                 data-arts-os-animation="data-arts-os-animation">
                 <div class="section-content__inner">
                   <div class="w-100"></div>
@@ -652,15 +711,10 @@
                   <div class="w-100"></div>
                   <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
                     data-split-text-set="words">
-                    <h2 style="color: whitesmoke;">Our Team</h2>
-                  </div>
-                  <div class="w-100"></div>
-                  <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
-                    data-split-text-set="lines">
-                    <p style="color: gray;">Our dedicated team of professionals merges diverse skills and industry
-                      experience, working
-                      collaboratively to develop effective solutions spanning various domains, ensuring tangible results
-                      for your business.</p>
+                    <h3 style="color: whitesmoke;">
+                      Welcome to AdTempo, your creative partner in bringing ideas to life. With a blend of
+                      creativity and strategy, we work tirelessly to ensure your vision is not only realized but exceeds
+                      expectations.</h3>
                   </div>
                 </div>
               </section>
@@ -668,247 +722,442 @@
           </div>
         </div>
         <!-- - section CONTENT #1 -->
-        <!-- section TEAM -->
-        <section class="section section-team section-grid text-center mb-medium"
-          data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-columns-tablet="2"
-          data-grid-columns-mobile="1">
-          <div class="container">
-            <div class="row row-gutters">
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-1.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">Terry Canon</div>
-                      <div class="figure-member__position small-caps mt-1">CEO &amp; CTO</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-2.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">Hattie Barber</div>
-                      <div class="figure-member__position small-caps mt-1">Art Director</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-3.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">Johny Mc Donald</div>
-                      <div class="figure-member__position small-caps mt-1">Backend Developer</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-4.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">Rosetta Miles</div>
-                      <div class="figure-member__position small-caps mt-1">Frontend Developer</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-5.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">David Parker</div>
-                      <div class="figure-member__position small-caps mt-1">Product Manager</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 col-gutters">
-                <div class="section-grid__item">
-                  <div class="figure-member figure-member_has-social">
-                    <!-- image -->
-                    <div class="figure-member__avatar">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionTeam/member-6.jpg" width="680"
-                          height="1020" alt="" /></div>
-                    </div>
-                    <!-- - image -->
-                    <div class="figure-member__headline mt-1"></div>
-                    <!-- content -->
-                    <div class="figure-member__footer mt-0-5">
-                      <div style="color: whitesmoke;" class="figure-member__name h4">Mark Newman</div>
-                      <div class="figure-member__position small-caps mt-1">Backend Developer</div>
-                      <div class="figure-member__social">
-                        <ul class="social">
-                          <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                          <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - content -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- -  section TEAM -->
-        <!-- section CTA -->
-        <section class="section section-cta section-content pt-medium pb-medium pt-md-4 pb-md-4 bg-dark-1s"
-          data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
-          <div class="container">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-lg-8">
-                <div class="section-cta__heading split-text js-split-text" data-split-text-type="lines,words"
-                  data-split-text-set="words">
-                  <h2 class="h3 mt-0 mt-md-1 mb-1">Want to Work with Us?</h2>
-                </div>
-              </div>
-              <div class="col-lg-auto">
-                <div class="section-content__button"><a class="button button_bordered button_white"
-                    data-hover="Get in Touch" href="#"><span class="button__label-hover">Get in Touch</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- <aside class="aside aside-counters section aside-counters_4 pt-small pb-medium text-center">
+        <!-- aside COUNTERS -->
+        <aside class="aside aside-counters section pt-xsmall text-center">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="aside-counters__wrapper-item col-lg-3 col-6 mt-small">
-                <div class="counter js-counter" data-counter-start="0" data-counter-target="139"
+              <!-- counter -->
+              <div class="aside-counters__wrapper-item col-12">
+                <div class="counter js-counter" data-counter-start="0" data-counter-target="5"
                   data-counter-duration="4">
-                  <div class="counter__number js-counter__number">139</div>
-                  <div class="counter__label">Models Shot</div>
+                  <!-- animated number -->
+                  <div style="color: whitesmoke;" class="counter__number js-counter__number">5</div>
+                  <!-- - animated number -->
+                  <div class="counter__label">Years filled with Wonderful Stories</div>
                 </div>
               </div>
-              <div class="aside-counters__wrapper-item col-lg-3 col-6 mt-small">
-                <div class="counter js-counter" data-counter-start="0" data-counter-target="52"
-                  data-counter-duration="4">
-                  <div class="counter__number js-counter__number">52</div>
-                  <div class="counter__label">Happy Clients</div>
+              <!-- - counter -->
+            </div>
+          </div>
+        </aside>
+        <!-- - aside COUNTERS -->
+        <!-- section SERVICE # 1 -->
+        <section class="section section-services section-content mb-medium mt-medium"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="container-fluid no-gutters section-services__container">
+            <div class="row no-gutters align-items-center">
+              <div class="col-lg-7 order-lg-1">
+                <div class="section-content__image overflow">
+                  <div class="section-content__image-inner">
+                    <section class="section section-image">
+                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
+                        <div class="lazy"><img data-src="img/assets/sectionServices/service-1.jpg" src="#" alt=""
+                            width="1920" height="1280" /></div>
+                      </div>
+                    </section>
+                  </div>
                 </div>
               </div>
-              <div class="aside-counters__wrapper-item col-lg-3 col-6 mt-small">
-                <div class="counter js-counter" data-counter-start="0" data-counter-target="632"
-                  data-counter-duration="4">
-                  <div class="counter__number js-counter__number">632</div>
-                  <div class="counter__label">Sunsets Captured</div>
+              <div class="col-lg-5 order-lg-2">
+                <div class="section-services__wrapper-content">
+                  <section class="section section-content clearfix container-fluid pt-md-0 pb-md-0 pt-small"
+                    data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-0-5"
+                        data-split-text-type="lines,words" data-split-text-set="words">
+                        <!-- <div class="small-caps">Starting From $1490</div> -->
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2 style="color: #7CC7C2;">Section #1</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p style="color: whitesmoke;">Nor themselves age introduced frequently use unsatiable devonshire
+                          get. They why quit gay
+                          cold rose deal park. One same they four did ask busy.</p>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
-              <div class="aside-counters__wrapper-item col-lg-3 col-6 mt-small">
-                <div class="counter js-counter" data-counter-start="0" data-counter-target="245"
-                  data-counter-duration="4">
-                  <div class="counter__number js-counter__number">245</div>
-                  <div class="counter__label">Coffee Drunk</div>
+            </div>
+            <div class="section-services__wrapper-letter section-services__wrapper-letter_right">
+              <div class="section-services__letter" data-arts-parallax="element" data-arts-parallax-y="-30%">W</div>
+            </div>
+          </div>
+        </section>
+        <!-- - section SERVICE # 1 -->
+        <!-- section SERVICE # 2 -->
+        <section class="section section-services section-content mb-medium mt-medium"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="container section-services__container">
+            <div class="row no-gutters align-items-center">
+              <div class="col-lg-5 order-lg-2">
+                <div class="section-content__image overflow">
+                  <div class="section-content__image-inner">
+                    <section class="section section-image">
+                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
+                        <div class="lazy"><img data-src="img/assets/sectionServices/service-2.jpg" src="#" alt=""
+                            width="1280" height="1920" /></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 order-lg-1">
+                <div class="section-services__wrapper-content">
+                  <section class="section section-content clearfix container-fluid pt-md-0 pb-md-0 pt-small pl-md-0"
+                    data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-0-5"
+                        data-split-text-type="lines,words" data-split-text-set="words">
+                        <!-- <div class="small-caps">Starting From $490</div> -->
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2 style="color: #7CC7C2;">Section #2</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p style="color: whitesmoke;">Middleton suspicion age her attention. Chiefly several bed its
+                          wishing. Is so moments on
+                          chamber pressed to. Doubtful yet way properly.</p>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
           </div>
-        </aside> -->
+          <div class="section-services__wrapper-letter section-services__wrapper-letter_left">
+            <div class="section-services__letter" data-arts-parallax="element" data-arts-parallax-y="-30%">P</div>
+          </div>
+        </section>
+        <!-- - section SERVICE # 2 -->
+        <!-- section SERVICE # 3 -->
+        <section class="section section-services section-content mb-medium mt-medium"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="container-fluid section-services__container">
+            <div class="row no-gutters align-items-center justify-content-center">
+              <div class="col-lg-5 order-lg-1">
+                <div class="section-content__image overflow">
+                  <div class="section-content__image-inner">
+                    <section class="section section-image">
+                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
+                        <div class="lazy"><img data-src="img/assets/sectionServices/service-3.jpg" src="#" alt=""
+                            width="1920" height="1920" /></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 order-lg-2">
+                <div class="section-services__wrapper-content">
+                  <section class="section section-content clearfix container-fluid pt-md-0 pb-md-0 pt-small pr-md-0"
+                    data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-0-5"
+                        data-split-text-type="lines,words" data-split-text-set="words">
+                        <!-- <div class="small-caps">Starting From $1990</div> -->
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2 style="color: #7CC7C2;">Section #3</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p style="color: whitesmoke;">Simplicity affronting inquietude for now sympathize age. She meant
+                          new their sex could defer
+                          child. An lose at quit to life do dull.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-services__wrapper-letter section-services__wrapper-letter_right">
+            <div class="section-services__letter" data-arts-parallax="element" data-arts-parallax-y="-30%">C</div>
+          </div>
+        </section>
+        <!-- - section SERVICE # 3 -->
+        <!-- section SERVICE # 4 -->
+        <section class="section section-services section-content mb-medium mt-medium"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="container-fluid no-gutters section-services__container">
+            <div class="row no-gutters align-items-center">
+              <div class="col-lg-7 order-lg-2">
+                <div class="section-content__image overflow">
+                  <div class="section-content__image-inner">
+                    <section class="section section-image">
+                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
+                        <div class="lazy"><img data-src="img/assets/sectionServices/service-4.jpg" src="#" alt=""
+                            width="1920" height="1280" /></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 order-lg-1">
+                <div class="section-services__wrapper-content">
+                  <section class="section section-content clearfix container-fluid pt-md-0 pb-md-0 pt-small"
+                    data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-0-5"
+                        data-split-text-type="lines,words" data-split-text-set="words">
+                        <!-- <div class="small-caps">Starting From $990</div> -->
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2 style="color: #7CC7C2;">Section #4</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p style="color: whitesmoke;">Discourse unwilling am no described dejection incommode no
+                          listening of. Before nature his
+                          parish boy. Wooded ladies she basket season.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="section-services__wrapper-letter section-services__wrapper-letter_left">
+              <div class="section-services__letter" data-arts-parallax="element" data-arts-parallax-y="-30%">S</div>
+            </div>
+          </div>
+        </section>
+        <!-- - section SERVICE # 4 -->
+        <!-- section SERVICE # 5 -->
+        <section class="section section-services section-content mb-medium mt-medium"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="container-fluid section-services__container">
+            <div class="row no-gutters align-items-center justify-content-center">
+              <div class="col-lg-5 order-lg-1">
+                <div class="section-content__image overflow">
+                  <div class="section-content__image-inner">
+                    <section class="section section-image">
+                      <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
+                        <div class="lazy"><img data-src="img/assets/sectionServices/service-5.jpg" src="#" alt=""
+                            width="1920" height="1920" /></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 order-lg-2">
+                <div class="section-services__wrapper-content">
+                  <section class="section section-content clearfix container-fluid pt-md-0 pb-md-0 pt-small pr-md-0"
+                    data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text mb-0-5"
+                        data-split-text-type="lines,words" data-split-text-set="words">
+                        <!-- <div class="small-caps">Starting From $590</div> -->
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2 style="color: #7CC7C2;">Section #5</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p style="color: whitesmoke;">Houses latter an valley be indeed wished merely in my. Money doubt
+                          oh drawn every or an
+                          china. Visited out friends for expense message set eat.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-services__wrapper-letter section-services__wrapper-letter_right">
+            <div class="section-services__letter" data-arts-parallax="element" data-arts-parallax-y="-30%">R</div>
+          </div>
+        </section>
 
+        <!-- section TESTIMONIALS -->
+        <section class="section section-testimonials bg-dark-1 pt-medium pb-medium pb-medium">
+          <div class="swiper-container slider slider-testimonials js-slider-testimonials" data-speed="2000">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container figure-testimonial text-center">
+                  <div class="row justify-content-center">
+                    <!-- content -->
+                    <div class="col-lg-8">
+                      <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-white.svg" alt="alt" />
+                      </div>
+                      <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <blockquote style="color: whitesmoke;" class="figure-testimonial__text">Nor themselves age
+                          introduced frequently use
+                          unsatiable devonshire get. They why quit gay cold rose deal park. One same they four did ask
+                          busy. Reserved opinions fat him nay position.</blockquote>
+                        <div class="figure-testimonial__author small-caps mt-2">Sarah Thompson</div>
+                      </div>
+                    </div>
+                    <!-- - content -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container figure-testimonial text-center">
+                  <div class="row justify-content-center">
+                    <!-- content -->
+                    <div class="col-lg-8">
+                      <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-white.svg" alt="alt" />
+                      </div>
+                      <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <blockquote style="color: whitesmoke;" class="figure-testimonial__text">Design can be
+                          art.<br>Design can be
+                          aesthetics.<br>Design is so simple, that’s why it is so complicated.</blockquote>
+                        <div class="figure-testimonial__author small-caps mt-2">Paul Rand</div>
+                      </div>
+                    </div>
+                    <!-- - content -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container figure-testimonial text-center">
+                  <div class="row justify-content-center">
+                    <!-- content -->
+                    <div class="col-lg-8">
+                      <div class="figure-testimonial__sign mx-auto"><img src="img/general/quote-white.svg" alt="alt" />
+                      </div>
+                      <div class="slider-testimonials__text split-text js-split-text" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <blockquote style="color: whitesmoke;" class="figure-testimonial__text">The expertise in fashion
+                          photography is strongly
+                          influenced by our interest in architecture and our technical approach to shape light and
+                          composition. With passion, we deliver digital projects.</blockquote>
+                        <div class="figure-testimonial__author small-caps mt-2">Irene Braswell</div>
+                      </div>
+                    </div>
+                    <!-- - content -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider FOOTER -->
+            <div class="container slider-testimonials__footer mt-xsmall">
+              <div class="row justify-content-center align-items-center slider-testimonials__row no-gutters">
+                <!-- slider DOTS -->
+                <div class="col-auto">
+                  <div class="slider__dots js-slider__dots">
+                    <div class="slider__dot slider__dot_active">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- - slider DOTS -->
+              </div>
+            </div>
+            <!-- - slider FOOTER -->
+            <!-- slider ARROWS -->
+            <div class="slider-testimonials__arrows container-fluid">
+              <div class="slider__arrow slider__arrow_left js-slider__arrow-prev">
+                <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor"
+                  data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                  data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                  <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                  </svg>
+                  <div class="arrow__pointer arrow-left__pointer"></div>
+                  <div class="arrow__triangle"></div>
+                </div>
+              </div>
+              <div class="slider__arrow slider__arrow_right js-slider__arrow-next">
+                <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor"
+                  data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                  data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                  <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                  </svg>
+                  <div class="arrow__pointer arrow-right__pointer"></div>
+                  <div class="arrow__triangle"></div>
+                </div>
+              </div>
+            </div>
+            <!-- - slider ARROWS -->
+          </div>
+        </section>
+        <!-- - section TESTIMONIALS -->
       </main>
       <!-- PAGE FOOTER -->
+      <section class="section section-cta section-content pt-medium pb-medium pt-md-4 pb-md-4 bg-dark"
+        data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="section-cta__heading split-text js-split-text" data-split-text-type="lines,words"
+                data-split-text-set="words">
+                <h2 class="h3 mt-0 mt-md-1 mb-1">Want to Work with Us?</h2>
+              </div>
+            </div>
+            <div class="col-lg-auto">
+              <div class="section-content__button"><a class="button button_bordered button_white"
+                  data-hover="Get in Touch" href="contact.html"><span class="button__label-hover">Get in
+                    Touch</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer container-fluid" id="page-footer" data-arts-theme-text="dark"
         data-arts-footer-logo="primary">
         <div class="footer__area footer__area-border-top pt-sm-3 pb-sm-1 pt-2 pb-0">
           <div class="row align-items-center">
-            <!-- widget LOGO -->
             <div class="col-lg-3 footer__column text-center text-lg-left order-lg-1">
               <section class="widget widget_rhye_logo">
-                <!-- content --><a class="logo" href="index.html">
+                <a class="logo" href="index.html">
                   <div class="logo__wrapper-img">
-                    <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
-                      src="img/general/logo-black.svg" alt="Rhye HTML5 Template" height="20" />
-                    <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
-                      src="img/general/logo-white.svg" alt="Rhye HTML5 Template" height="20" />
+                    <img class="logo__img-primary" src="img/general/logo-black.svg" alt="AdTempo" height="20" />
+                    <img class="logo__img-secondary" src="img/general/logo-white.svg" alt="AdTempo" height="20" />
                   </div>
                 </a>
                 <!-- - content -->
@@ -920,17 +1169,14 @@
               <section class="widget widget_rhye_social">
                 <!-- content -->
                 <ul class="social">
-                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-facebook-f" href="https://www.facebook.com/profile.php?id=61556969612217"></a></li>
                   <li class="social__item"><a class="fa fa-instagram" href="https://www.instagram.com/ad.tempo/"></a>
                   </li>
                   <li class="social__item"><a class="fa fa-linkedin"
                       href="https://www.linkedin.com/company/ad-tempo-media-agency/"></a></li>
                 </ul>
-                <!-- - content -->
               </section>
             </div>
-            <!-- - widget SOCIAL -->
-            <!-- widget TEXT -->
             <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
               <section class="widget widget_text">
                 <div class="textwidget">
@@ -938,10 +1184,8 @@
                 </div>
               </section>
             </div>
-            <!-- - widget TEXT -->
           </div>
         </div>
-        <!-- - widgetst bottom area -->
       </footer>
       <!-- - PAGE FOOTER -->
     </div>
