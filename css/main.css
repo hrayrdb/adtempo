@@ -225,6 +225,11 @@
   --preloader-circle-min-size: 280;
 }
 
+::selection{
+  background: #7cc7c2;
+}
+
+
 @media screen and (max-width: 1400px) {
   :root {
     --gutter-horizontal: 80px;
