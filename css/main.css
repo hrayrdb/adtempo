@@ -12907,12 +12907,23 @@ small,
 }
 
 
-/* whatsapp ======================================================================!*/
-.whatsapp_float {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  z-index: 1000;
-
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange; /* Cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The cursor blink effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
