@@ -1473,7 +1473,7 @@ a:hover {
 
 .curtain__rect {
   flex: 1 0 80%;
-  background: #000000;
+  background: #111111;
 }
 
 .curtain {
@@ -4561,11 +4561,11 @@ div.wpcf7-acceptance-missing {
 }
 
 .overlay_dark {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #111111
 }
 
 .overlay_dark-30 {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #111111
 }
 
 .overlay_deither:before {
@@ -4580,7 +4580,7 @@ div.wpcf7-acceptance-missing {
 }
 
 .overlay_circle-dark {
-  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 90%, rgb(0, 0, 0) 100%);
+  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgb(17, 17, 17) 90%, rgb(17, 17, 17) 100%);
 }
 
 .overlay_circle-dark-70 {
@@ -12927,3 +12927,5 @@ small,
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
+
