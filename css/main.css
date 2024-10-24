@@ -530,7 +530,7 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: #F3F2ED  !important;
 }
 
 .bg-gray-1 {
@@ -1661,6 +1661,7 @@ a:hover {
 .figure-info__value {
   margin-top: 0;
   margin-bottom: 0;
+  
 }
 
 /*========================================================================
