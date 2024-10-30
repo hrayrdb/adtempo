@@ -225,7 +225,7 @@
   --preloader-circle-min-size: 280;
 }
 
-::selection{
+::selection {
   background: #7cc7c2;
 }
 
@@ -530,7 +530,7 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #F3F2ED  !important;
+  background-color: #F3F2ED !important;
 }
 
 .bg-gray-1 {
@@ -548,6 +548,7 @@ a:hover {
 .bg-pierre4ad {
   background-color: var(--color-pierre4ad) !important;
 }
+
 /*========================================================================
  * 4. Bootstrap Layout
  * ======================================================================!*/
@@ -1661,7 +1662,7 @@ a:hover {
 .figure-info__value {
   margin-top: 0;
   margin-bottom: 0;
-  
+
 }
 
 /*========================================================================
@@ -12910,7 +12911,8 @@ small,
 
 .typewriter {
   overflow: hidden;
-  border-right: .15em solid orange; /* Cursor */
+  border-right: .15em solid orange;
+  /* Cursor */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
@@ -12919,14 +12921,37 @@ small,
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* The cursor blink effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
 
 
+.position-relative {
+  position: relative;
+}
+
+.stacked-image {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(3.5);
+  z-index: -10;
+  opacity: 0.1;
+}
