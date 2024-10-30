@@ -4069,14 +4069,30 @@ div.wpcf7-acceptance-missing {
   position: relative;
   align-items: center;
   flex: 1 0 auto;
-  height: 100%;
+  height: auto;
   margin-right: 15px;
 }
 
+/* Default style for mobile (no width restriction) */
 .logo__wrapper-img img {
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  display: block;
+  display: none;
+  width: auto;
+  height: auto;
 }
+
+/* Apply width restriction only for larger screens */
+@media (min-width: 600px) {
+  .logo__wrapper-img img {
+    width: 25vw; /* Adjusts to 15% of the viewport width on larger screens */
+
+    max-width: 300px !important; /* Ensure the width restriction takes effect on larger screens */
+    height: auto;
+    display: flex; /* or block, depending on your layout */
+
+  }
+}
+
 
 .logo__text-title {
   display: block;
@@ -12953,5 +12969,5 @@ small,
   top: 50%;
   transform: translate(-50%, -50%) scale(3.5);
   z-index: -10;
-  opacity: 0.1;
+  opacity: 0.02;
 }
