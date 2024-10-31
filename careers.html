@@ -35,6 +35,109 @@
   <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png" />
   <meta name="theme-color" content="#FBF8F2  " />
   <link rel="icon" type="image/x-icon" href="img/content/favicon.ico" />
+
+
+  <style>
+    /* Modal Background */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.5s;
+    }
+
+    /* Modal Box */
+    .modal-content {
+      background-color: white;
+      border-radius: 8px;
+      padding: 2em;
+      width: 90%;
+      /* Take more screen width */
+      max-width: 800px;
+      /* Set a max width for larger screens */
+      font-family: 'Raleway', sans-serif;
+      color: #111;
+      animation: fadeInContent 0.3s;
+    }
+
+    /* Close Button */
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    /* Fade-in animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInContent {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Text and Layout */
+    .modal-content h3 {
+      font-size: 1.5em;
+    }
+
+    .modal-content h4 {
+      font-size: 1.2em;
+      margin-top: 1em;
+    }
+
+    .modal-content p,
+    .modal-content ul li {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    /* Smaller screen adjustments */
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 95%;
+        /* Almost full width on smaller screens */
+        padding: 1.5em;
+      }
+
+      .modal-content h3 {
+        font-size: 1.3em;
+      }
+
+      .modal-content h4 {
+        font-size: 1.1em;
+      }
+
+      .modal-content p,
+      .modal-content ul li {
+        font-size: 0.9em;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -378,25 +481,23 @@
               <div class="row align-items-center justify-content-center justify-content-md-between">
                 <div class="col-md-10">
                   <div class="row align-items-center justify-content-center justify-content-md-start">
-                    <!-- album cover -->
+
                     <div class="col-auto">
                       <div class="list-projects__thumbnail">
-                        <div class="lazy-bg" data-src="img/assets/sectionCareers/graphic.png" style="opacity: 0.5;">
+                        <div class="lazy-bg" data-src="img/assets/sectionCareers/pr.png" style="opacity: 0.5;">
                         </div>
                       </div>
                     </div>
-                    <!-- - album cover -->
+
                     <div class="w-100 d-md-none"></div>
-                    <!-- header -->
+
                     <div class="col-md-auto col-12 text-center">
                       <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
-                        data-split-text-type="lines,words" data-split-text-set="words"  style="color: #c7c7c7; opacity: 0.5;"><span>Graphic Designer</span>
+                        data-split-text-type="lines,words" data-split-text-set="words"
+                        style="color: #c7c7c7; opacity: 0.5;"><span>PR Officer</span>
                       </h2>
                     </div>
-                    <!-- Job Title Section -->
 
-
-                    <!-- - header -->
                   </div>
                 </div>
                 <div class="col-auto">
@@ -412,7 +513,57 @@
                   </div>
                 </div>
               </div>
-              <!-- album photos -->
+
+              <div id="pr-modal" class="modal">
+                <div class="modal-content">
+                  <span class="modal-close" onclick="closeModal()">&times;</span>
+                  <h2>Public Relations (PR) Officer</h2>
+
+                  <p><strong>About the Role:</strong><br>
+                    We're on the lookout for a dedicated PR Officer with a strong sense of initiative and a passion for
+                    building lasting relationships. This role will play a vital part in enhancing our brand presence and
+                    ensuring transparent, impactful communication with both our clients and the public. If you're
+                    proactive, organized, and driven by creative problem-solving, we'd love to hear from you.
+                  </p>
+
+                  <h3>What You’ll Do:</h3>
+                  <ul>
+                    <li>Work closely with various departments, ensuring smooth information flow and alignment with
+                      management on PR strategies.</li>
+                    <li>Plan and coordinate PR events, showcasing our brand values and representing the company as a key
+                      spokesperson.</li>
+                    <li>Identify and pursue collaboration opportunities, including sponsorships, partnerships, and
+                      advertising to expand our reach.</li>
+                    <li>Serve as the primary contact for media and other inquiries, managing responses and building a
+                      positive public image.</li>
+                    <li>Craft comprehensive PR reports that capture our efforts, successes, and areas for improvement.
+                    </li>
+                    <li>Lead resolution efforts on any PR issues that arise, mitigating risks to our brand reputation.
+                    </li>
+                    <li>Oversee multimedia projects, including photography and videography, that support our promotional
+                      and branding initiatives.</li>
+                  </ul>
+
+                  <h3>What We’re Looking For:</h3>
+                  <ul>
+                    <li>Previous experience in a PR or related role, with a proven ability to drive results in a
+                      fast-paced environment.</li>
+                    <li>Solid proficiency in MS Office and various social media platforms.</li>
+                    <li>Experience or familiarity with project management processes to streamline PR activities and
+                      campaigns.</li>
+                    <li>Exceptional communication skills, both verbal and written, allowing you to connect effectively
+                      with diverse audiences.</li>
+                    <li>Strong organizational skills, attention to detail, and the ability to manage multiple projects
+                      simultaneously.</li>
+                    <li>A creative thinker with a problem-solving mindset and a readiness to innovate in all PR-related
+                      activities.</li>
+                  </ul>
+
+                  <p><strong>Type:</strong> Freelance, with potential for a full-time role offering a salary plus
+                    performance-based incentives.</p>
+                </div>
+              </div>
+
               <div class="js-album__items d-none"><img src="#" data-album-src="img/assets/albumImages/album-5_1.jpg"
                   width="1280" height="1920" data-title="" alt="" /><img src="#"
                   data-album-src="img/assets/albumImages/album-5_2.jpg" width="1920" height="1280" data-title=""
@@ -422,14 +573,16 @@
                   data-album-src="img/assets/albumImages/album-5_5.jpg" width="1280" height="1920" data-title=""
                   alt="" />
               </div>
-              <!-- - album photos -->
-            </a><a class="list-projects__item container pt-xsmall pb-xsmall hover-zoom js-arrow js-album" href="#">
+
+            </a>
+
+            <!-- <a class="list-projects__item container pt-xsmall pb-xsmall hover-zoom js-arrow js-album" href="#">
               <div class="row align-items-center justify-content-center justify-content-md-between ">
                 <div class="col-md-10">
                   <div class="row align-items-center justify-content-center justify-content-md-start">
-                    <!-- album cover -->
 
-                    <!-- <div class="col-auto">
+                    
+                    <div class="col-auto">
                       <div class="hover-zoom__inner">
                         <div class="hover-zoom__zoom">
                           <div class="list-projects__thumbnail" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
@@ -437,7 +590,7 @@
                           </div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
 
                     <div class="col-auto">
                       <div class="list-projects__thumbnail">
@@ -445,15 +598,16 @@
                       </div>
                     </div>
 
-                    <!-- - album cover -->
+
                     <div class="w-100 d-md-none"></div>
-                    <!-- header -->
+
                     <div class="col-md-auto col-12 text-center">
                       <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
-                        data-split-text-type="lines,words" data-split-text-set="words"  style="color: #c7c7c7; opacity: 0.5;"><span>SM Manager</span>
+                        data-split-text-type="lines,words" data-split-text-set="words"
+                        style="color: #c7c7c7; opacity: 0.5;"><span>SM Manager</span>
                       </h2>
                     </div>
-                    <!-- - header -->
+
                   </div>
                 </div>
                 <div class="col-auto">
@@ -469,7 +623,7 @@
                   </div>
                 </div>
               </div>
-              <!-- album photos -->
+
               <div class="js-album__items d-none"><img src="#" data-album-src="img/assets/albumImages/album-6_1.jpg"
                   width="1920" height="1280" data-title="" alt="" /><img src="#"
                   data-album-src="img/assets/albumImages/album-6_2.jpg" width="1280" height="1920" data-title=""
@@ -479,13 +633,14 @@
                   data-album-src="img/assets/albumImages/album-6_5.jpg" width="1920" height="1920" data-title=""
                   alt="" />
               </div>
-              <!-- - album photos -->
-            </a><a class="list-projects__item container pt-xsmall pb-xsmall hover-zoom js-arrow js-album" href="#">
+
+            </a> -->
+            <!-- <a class="list-projects__item container pt-xsmall pb-xsmall hover-zoom js-arrow js-album" href="#">
               <div class="row align-items-center justify-content-center justify-content-md-between">
                 <div class="col-md-10">
                   <div class="row align-items-center justify-content-center justify-content-md-start">
-                    <!-- album cover -->
 
+                    
                     <div class="col-auto">
                       <div class="list-projects__thumbnail">
                         <div class="lazy-bg" data-src="img/assets/sectionCareers/operation.png" style="opacity: 0.5;">
@@ -493,15 +648,16 @@
                       </div>
                     </div>
 
-                    <!-- - album cover -->
+
                     <div class="w-100 d-md-none"></div>
-                    <!-- header -->
+
                     <div class="col-md-auto col-12 text-center">
                       <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
-                        data-split-text-type="lines,words" data-split-text-set="words" style="color: #c7c7c7; opacity: 0.5;"><span>Operation Manager</span>
+                        data-split-text-type="lines,words" data-split-text-set="words"
+                        style="color: #c7c7c7; opacity: 0.5;"><span>Operation Manager</span>
                       </h2>
                     </div>
-                    <!-- - header -->
+
                   </div>
                 </div>
                 <div class="col-auto">
@@ -517,7 +673,7 @@
                   </div>
                 </div>
               </div>
-              <!-- album photos -->
+
               <div class="js-album__items d-none"><img src="#" data-album-src="img/assets/albumImages/album-7_1.jpg"
                   width="1280" height="1920" data-title="" alt="" /><img src="#"
                   data-album-src="img/assets/albumImages/album-7_2.jpg" width="1280" height="1920" data-title=""
@@ -527,8 +683,8 @@
                   data-album-src="img/assets/albumImages/album-7_5.jpg" width="1280" height="1920" data-title=""
                   alt="" />
               </div>
-              <!-- - album photos -->
-            </a>
+
+            </a> -->
           </div>
         </section>
         <!-- - section ALBUMS LIST COVERS -->
@@ -553,9 +709,11 @@
                       <label class="input-float js-input-float">
                         <select class="input-float__input" name="position" required
                           style="font-family: 'Raleway', sans-serif;">
-                          <option value="Digital Marketing Specialist">Graphic Designer</option>
+                          <!-- <option value="Digital Marketing Specialist">Graphic Designer</option>
                           <option value="Graphic Designer">Social Media Manager</option>
-                          <option value="Web Developer">Operation Manager</option>
+                          <option value="Web Developer">Operation Manager</option> -->
+                          <option value="PR Officer">PR Officer</option>
+
                         </select>
                         <span class="input-float__label">Position</span><span class="form__error"></span>
                       </label>
@@ -718,6 +876,29 @@
   <!-- JavaScript -->
   <script src="js/vendor.js"></script>
   <script src="js/components.js"></script>
+
+
+  <script>
+    // Open modal function
+    function openModal() {
+      document.getElementById("pr-modal").style.display = "flex";
+    }
+
+    // Close modal function
+    function closeModal() {
+      document.getElementById("pr-modal").style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("pr-modal")) {
+        closeModal();
+      }
+    }
+
+    // Attach event to the arrow button
+    document.querySelector(".arrow-right").addEventListener("click", openModal);
+  </script>
 </body>
 
 </html>
