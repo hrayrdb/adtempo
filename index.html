@@ -404,11 +404,13 @@
           <section class="section-image section-masthead__background section-masthead__background_fullscreen">
             <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
               data-arts-parallax-factor="0.15">
-              <video class="of-cover" src="img/assets/showreel.mp4" autoplay="autoplay" playsinline="playsinline"
-                muted="muted" loop="loop"></video>
+              <video id="showreel-video" class="of-cover" autoplay="autoplay" playsinline="playsinline" muted="muted"
+                loop="loop">
+                <!-- Default source is for desktop, JavaScript will switch for mobile if needed -->
+                <source src="img/assets/sectionVideo/showreel.mp4" type="video/mp4" />
+              </video>
             </div>
           </section>
-
         </section>
 
         <!-- section CONTENT #1 -->
@@ -1185,7 +1187,7 @@
             </section>
             <!-- - section MASTHEAD -->
             <!-- section ALBUMS LIST HOVER REVEAL -->
-            <section class="section section-list overflow pb-medium" data-arts-os-animation="data-arts-os-animation">
+            <section class="section section-list overflow pb-small" data-arts-os-animation="data-arts-os-animation">
               <div class="container">
                 <div class="row">
                   <div class="col">
@@ -1195,18 +1197,18 @@
                         data-post-id="1">
                         <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text "
                           data-split-text-type="lines,words" data-split-text-set="words"
-                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; opacity: 0.5;">
                           <span>PHOTOSHOOTS</span>
                         </h2>
                         <!-- album photos -->
                         <div class="js-album__items d-none"><img src="#"
                             data-album-src="img/assets/albumImages/album-2_1.jpg" width="1920" height="1280"
                             data-title="" alt="" /><img src="#" data-album-src="img/assets/albumImages/album-2_2.jpg"
-                            width="1280" height="1920" data-title="" alt="" /><img src="#"
-                            data-album-src="img/assets/albumImages/album-2_3.jpg" width="1920" height="1280"
+                            width="1280" height="1920" data-title="" alt="" />
+                          <img src="#" data-album-src="img/assets/albumImages/album-2_3.jpg" width="1920" height="1280"
                             data-title="" alt="" /><img src="#" data-album-src="img/assets/albumImages/album-2_4.jpg"
-                            width="1920" height="1280" data-title="" alt="" /><img src="#"
-                            data-album-src="img/assets/albumImages/album-2_5.jpg" width="1920" height="1920"
+                            width="1920" height="1280" data-title="" alt="" />
+                          <img src="#" data-album-src="img/assets/albumImages/album-2_5.jpg" width="1920" height="1920"
                             data-title="" alt="" />
                         </div>
                         <!-- - album photos -->
@@ -1216,7 +1218,8 @@
                         data-post-id="2">
                         <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
                           data-split-text-type="lines,words" data-split-text-set="words"
-                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span>SOCIAL
+                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  opacity: 0.5;">
+                          <span>SOCIAL
                             MEDIA</span>
                         </h2>
                         <!-- album photos -->
@@ -1240,7 +1243,7 @@
                         data-post-id="3">
                         <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
                           data-split-text-type="lines,words" data-split-text-set="words"
-                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; opacity: 0.5;">
                           <span>BRANDING</span>
                         </h2>
                         <!-- album photos -->
@@ -1254,495 +1257,448 @@
                         </div>
                         <!-- - album photos -->
                       </a>
-
-                      <a class="list-projects__item pt-xsmall pb-xsmall js-list-thumbs__link js-album" href="#"
-                        data-post-id="4">
-                        <h2 class="h2 d-inline-block list-projects__heading block-counter js-split-text split-text"
-                          data-split-text-type="lines,words" data-split-text-set="words"
-                          style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
-                          <span>WEBSITES</span>
-                        </h2>
-
-                        <div class="js-album__items d-none"><img src="#"
-                            data-album-src="img/assets/albumImages/album-5_1.jpg" width="1280" height="1920"
-                            data-title="" alt="" /><img src="#" data-album-src="img/assets/albumImages/album-5_2.jpg"
-                            width="1920" height="1280" data-title="" alt="" /><img src="#"
-                            data-album-src="img/assets/albumImages/album-5_3.jpg" width="1280" height="1920"
-                            data-title="" alt="" /><img src="#" data-album-src="img/assets/albumImages/album-5_4.jpg"
-                            width="1920" height="1280" data-title="" alt="" /><img src="#"
-                            data-album-src="img/assets/albumImages/album-5_5.jpg" width="1280" height="1920"
-                            data-title="" alt="" />
-                        </div>
-                      </a>
                       <div class="list-project__canvas js-list-thumbs__covers"
                         data-arts-scroll-fixed="data-arts-scroll-fixed">
-                        <div class="list-projects__covers" data-background-for="0">
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="0">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-1_thumb-1.jpg" width="180" height="180" alt="" />
-                            </div>
-                          </div>
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="0">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-1_thumb-2.jpg" width="217" height="325" alt="" />
-                            </div>
-                          </div>
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="0">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-1_thumb-3.jpg" width="315" height="210" alt="" />
-                            </div>
-                          </div>
-                        </div>
+
                         <div class="list-projects__covers" data-background-for="1">
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="1">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-2_thumb-1.jpg" width="217" height="325" alt="" />
+                                data-src="img/assets/sectionSnippets/photoshoot1.jpg" width="217" height="325" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="1">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-2_thumb-2.jpg" width="180" height="180" alt="" />
+                                data-src="img/assets/sectionSnippets/photoshoot2.jpg" width="180" height="180" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="1">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-2_thumb-3.jpg" width="315" height="210" alt="" />
+                                data-src="img/assets/sectionSnippets/photoshoot3.jpg" width="315" height="210" alt="" />
                             </div>
                           </div>
                         </div>
                         <div class="list-projects__covers" data-background-for="2">
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="2">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-3_thumb-1.jpg" width="216" height="216" alt="" />
+                                data-src="img/assets/sectionSnippets/sm1.jpg" width="216" height="216" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="2">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-3_thumb-2.jpg" width="333" height="333" alt="" />
+                                data-src="img/assets/sectionSnippets/sm2.jpg" width="333" height="333" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="2">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-3_thumb-3.jpg" width="315" height="315" alt="" />
+                                data-src="img/assets/sectionSnippets/sm3.jpg" width="315" height="315" alt="" />
                             </div>
                           </div>
                         </div>
                         <div class="list-projects__covers" data-background-for="3">
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="3">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-4_thumb-1.jpg" width="216" height="216" alt="" />
+                                data-src="img/assets/sectionSnippets/branding1.jpg" width="216" height="216" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="3">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-4_thumb-2.jpg" width="333" height="333" alt="" />
+                                data-src="img/assets/sectionSnippets/branding2.jpg" width="333" height="333" alt="" />
                             </div>
                           </div>
                           <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="3">
                             <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-4_thumb-3.jpg" width="315" height="210" alt="" />
+                                data-src="img/assets/sectionSnippets/branding3.jpg" width="315" height="210" alt="" />
                             </div>
                           </div>
                         </div>
-                        <div class="list-projects__covers" data-background-for="4">
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="4">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-5_thumb-1.jpg" width="315" height="210" alt="" />
-                            </div>
-                          </div>
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="4">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-5_thumb-2.jpg" width="333" height="333" alt="" />
-                            </div>
-                          </div>
-                          <div class="list-projects__cover-reveal js-list-thumbs__cover" data-background-for="4">
-                            <div class="list-projects__cover-wrapper"><img src="#"
-                                data-src="img/assets/albums/album-5_thumb-3.jpg" width="315" height="210" alt="" />
-                            </div>
-                          </div>
-                        </div>
-
                       </div>
                       <!-- - hover images -->
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- - section ALBUMS LIST HOVER REVEAL -->
-          </main>
-        </div>
-        <div class="section bg-light-1 pt-medium pb-medium overflow">
-          <section class="section section-demo section_w-container-right text-left">
-            <div class="container-fluid section-demo__container-left">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="section-demo__content">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section__headline mb-1 mb-md-2 mr-auto"></div>
-                        <div class="w-100"></div>
-                        <div class="section-content__heading split-text js-split-text"
-                          data-split-text-type="lines,words" data-split-text-set="words">
-                          <h2>About Adtempo</h2>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
-                          data-split-text-set="lines">
-                          <p>Our mission is to be the premier partner for brands seeking to make a long-lasting impact
-                            on the world. We are committed to empowering businesses through innovative strategies that
-                            resonate globally. By prioritizing community engagement in all our endeavors, we aim to not
-                            only achieve short-term success for our clients but also contribute to long-term growth and
-                            positive change.</p>
-                        </div>
-                      </div>
-                    </section>
-                    <aside class="aside aside-counters section">
-                      <div class="container no-gutters">
-                        <div class="row justify-content-center">
-                          <div class="aside-counters__wrapper-item col-6 mt-small">
-                            <div class="counter js-counter" data-counter-start="0" data-counter-target="13"
-                              data-counter-duration="4">
-                              <div class="counter__number js-counter__number">13</div>
-                              <div class="counter__label">Total Clients</div>
-                            </div>
-                          </div>
-                          <div class="aside-counters__wrapper-item col-6 mt-small">
-                            <div class="counter js-counter" data-counter-start="0" data-counter-target="1"
-                              data-counter-duration="4">
-                              <div class="counter__number js-counter__number">1</div>
-                              <div class="counter__label">Years in Service</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </aside>
-                    <div class="mt-small d-lg-none"><a class="button button_bordered button_black"
-                        data-hover="Explore About" href="about.html" target="_blank"><span
-                          class="button__label-hover">Explore About</span></a>
-                    </div>
+                <div class="w-100 pt-small justify-content-center text-center ">
+                  <h3 style="color: rgba(184, 184, 184, 0.088);">Check Out All Our Works</h3>
+                  <div class="section-masthead__wrapper-button mt-xsmall"><a class="button button_bordered button_white"
+                      data-hover="Works" href="works.html" target="_blank"><span class="button__label-hover">
+                        Works</span></a>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="section-demo__stacked-images pt-small pt-md-0">
-                    <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="10%">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionAbout/home-about.jpg" width="940"
-                          height="1410" alt=""></div>
-                    </div>
-                    <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="20%">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionDemo/portfolio-details-screen-2.jpg"
-                          width="940" height="1410" alt=""></div>
-                      <div class="lazy" style="background-color: #7cc7c2; width: 940px; height: 1410px;"></div>
-                    </div>
-                    <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="30%">
-                      <div class="lazy"><img src="#" data-src="img/assets/sectionDemo/portfolio-details-screen-3.jpg"
-                          width="940" height="1410" alt=""></div>
-                      <div class="lazy" style="background-color: #111111; width: 940px; height: 1410px;"></div>
+              </div>
+        </div>
 
+        </section>
+        <!-- - section ALBUMS LIST HOVER REVEAL -->
+      </main>
+
+      <div class="section bg-light-1 pt-medium pb-medium overflow">
+        <section class="section section-demo section_w-container-right text-left">
+          <div class="container-fluid section-demo__container-left">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="section-demo__content">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section__headline mb-1 mb-md-2 mr-auto"></div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2>About Adtempo</h2>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p>Our mission is to be the premier partner for brands seeking to make a long-lasting impact
+                          on the world. We are committed to empowering businesses through innovative strategies that
+                          resonate globally. By prioritizing community engagement in all our endeavors, we aim to not
+                          only achieve short-term success for our clients but also contribute to long-term growth and
+                          positive change.</p>
+                      </div>
                     </div>
+                  </section>
+                  <aside class="aside aside-counters section">
+                    <div class="container no-gutters">
+                      <div class="row justify-content-center">
+                        <div class="aside-counters__wrapper-item col-6 mt-small">
+                          <div class="counter js-counter" data-counter-start="0" data-counter-target="13"
+                            data-counter-duration="4">
+                            <div class="counter__number js-counter__number">13</div>
+                            <div class="counter__label">Total Clients</div>
+                          </div>
+                        </div>
+                        <div class="aside-counters__wrapper-item col-6 mt-small">
+                          <div class="counter js-counter" data-counter-start="0" data-counter-target="1"
+                            data-counter-duration="4">
+                            <div class="counter__number js-counter__number">1</div>
+                            <div class="counter__label">Years in Service</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="mt-small d-lg-none"><a class="button button_bordered button_black"
+                      data-hover="Explore About" href="about.html" target="_blank"><span
+                        class="button__label-hover">Explore About</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="section-demo__stacked-images pt-small pt-md-0">
+                  <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="10%">
+                    <div class="lazy"><img src="#" data-src="img/assets/sectionAbout/home-about.jpg" width="940"
+                        height="1410" alt=""></div>
+                  </div>
+                  <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="20%">
+                    <div class="lazy"><img src="#" data-src="img/assets/sectionDemo/portfolio-details-screen-2.jpg"
+                        width="940" height="1410" alt=""></div>
+                    <div class="lazy" style="background-color: #7cc7c2; width: 940px; height: 1410px;"></div>
+                  </div>
+                  <div class="section-demo__stacked-image" data-arts-parallax="element" data-arts-parallax-x="30%">
+                    <div class="lazy"><img src="#" data-src="img/assets/sectionDemo/portfolio-details-screen-3.jpg"
+                        width="940" height="1410" alt=""></div>
+                    <div class="lazy" style="background-color: #111111; width: 940px; height: 1410px;"></div>
+
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <div class="section-demo__bg section-demo__bg_right bg-light-3 d-none d-lg-block"></div>
-          <div class="section-demo__wrapper-button section-demo__wrapper-button_right d-none d-lg-flex"><a
-              class="circle-button circle-button_link js-circle-button" data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="about.html"
-              target="_blank" data-arts-os-animation="true">
+          </div>
+        </section>
+        <div class="section-demo__bg section-demo__bg_right bg-light-3 d-none d-lg-block"></div>
+        <div class="section-demo__wrapper-button section-demo__wrapper-button_right d-none d-lg-flex"><a
+            class="circle-button circle-button_link js-circle-button" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="about.html"
+            target="_blank" data-arts-os-animation="true">
 
-              <!--               href="project-details-1-fullscreen-center.html" target="_blank" data-arts-os-animation="true">
+            <!--               href="project-details-1-fullscreen-center.html" target="_blank" data-arts-os-animation="true">
  -->
-              <div class="circle-button__outer">
-                <div class="circle-button__wrapper-label">
-                  <div class="circle-button__label small-caps">Explore About</div>
-                </div>
+            <div class="circle-button__outer">
+              <div class="circle-button__wrapper-label">
+                <div class="circle-button__label small-caps">Explore About</div>
               </div>
-              <!-- - curved label -->
-              <!-- geometry wrapper -->
-              <div class="circle-button__inner">
-                <div class="circle-button__circle">
-                  <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                  </svg>
-                </div>
-                <div class="circle-button__icon circle-button__icon-touch">
-                  <div class="material-icons">add</div>
-                </div>
+            </div>
+            <!-- - curved label -->
+            <!-- geometry wrapper -->
+            <div class="circle-button__inner">
+              <div class="circle-button__circle">
+                <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                </svg>
               </div>
-            </a>
-          </div>
+              <div class="circle-button__icon circle-button__icon-touch">
+                <div class="material-icons">add</div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="section bg-light-2">
-          <section class="section section-demo section_w-container-left text-left">
-            <div class="container-fluid section-demo__container-right">
-              <div class="row align-items-center">
-                <div class="col-lg-6 offset-lg-6">
-                  <div class="section-demo__content pt-medium pb-medium">
-                    <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
-                      <div class="section-content__inner">
-                        <div class="w-100"></div>
-                        <div class="section__headline mb-1 mb-md-2 mr-auto"></div>
-                        <div class="w-100"></div>
-                        <div class="section-content__heading split-text js-split-text"
-                          data-split-text-type="lines,words" data-split-text-set="words">
-                          <h2>Meet The Team</h2>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
-                          data-split-text-set="lines">
-                          <p>The team's passion for creativity and keen eye for rhythm helps to craft campaigns that
-                            amplify your brand's presence and leave a lasting impression. </p>
-                        </div>
+      </div>
+      <div class="section bg-light-2">
+        <section class="section section-demo section_w-container-left text-left">
+          <div class="container-fluid section-demo__container-right">
+            <div class="row align-items-center">
+              <div class="col-lg-6 offset-lg-6">
+                <div class="section-demo__content pt-medium pb-medium">
+                  <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                    <div class="section-content__inner">
+                      <div class="w-100"></div>
+                      <div class="section__headline mb-1 mb-md-2 mr-auto"></div>
+                      <div class="w-100"></div>
+                      <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                        data-split-text-set="words">
+                        <h2>Meet The Team</h2>
                       </div>
-                    </section>
-                    <aside class="aside aside-counters section">
-                      <div class="container no-gutters">
-                        <div class="row justify-content-center">
-                          <div class="aside-counters__wrapper-item col-6 mt-small">
-                            <div class="counter js-counter" data-counter-start="0" data-counter-target="11"
-                              data-counter-duration="4">
-                              <div class="counter__number js-counter__number">11</div>
-                              <div class="counter__label">Active Members</div>
-                            </div>
-                          </div>
-                          <div class="aside-counters__wrapper-item col-6 mt-small">
-                            <div class="counter js-counter" data-counter-start="0%" data-counter-target="3"
-                              data-counter-duration="4">
-                              <div class="counter__number js-counter__number">3</div>
-                              <div class="counter__label">New Members per year</div>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="w-100"></div>
+                      <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <p>The team's passion for creativity and keen eye for rhythm helps to craft campaigns that
+                          amplify your brand's presence and leave a lasting impression. </p>
                       </div>
-                    </aside>
-                    <div class="mt-small d-lg-none"><a class="button button_bordered button_black"
-                        data-hover="Explore Pages" href="team.html" target="_blank"><span
-                          class="button__label-hover">Meet
-                          The Team</span></a>
                     </div>
+                  </section>
+                  <aside class="aside aside-counters section">
+                    <div class="container no-gutters">
+                      <div class="row justify-content-center">
+                        <div class="aside-counters__wrapper-item col-6 mt-small">
+                          <div class="counter js-counter" data-counter-start="0" data-counter-target="11"
+                            data-counter-duration="4">
+                            <div class="counter__number js-counter__number">11</div>
+                            <div class="counter__label">Active Members</div>
+                          </div>
+                        </div>
+                        <div class="aside-counters__wrapper-item col-6 mt-small">
+                          <div class="counter js-counter" data-counter-start="0%" data-counter-target="3"
+                            data-counter-duration="4">
+                            <div class="counter__number js-counter__number">3</div>
+                            <div class="counter__label">New Members per year</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="mt-small d-lg-none"><a class="button button_bordered button_black"
+                      data-hover="Explore Pages" href="team.html" target="_blank"><span class="button__label-hover">Meet
+                        The Team</span></a>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <div class="section-demo__bg section-demo__bg_wide section-demo__bg_left bg-white" data-arts-parallax
-            data-arts-parallax-factor="0.3">
-            <div>
-              <div class="lazy-bg" data-src="img/assets/team/meet-the-team.jpg"></div>
-              <!-- <div class="lazy-bg" data-src="img/assets/sectionDemo/inner-pages-screen-1.png"></div> -->
-            </div>
           </div>
-          <div class="section-demo__wrapper-button section-demo__wrapper-button_left d-none d-lg-flex"><a
-              class="circle-button circle-button_link js-circle-button" data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="team.html"
-              target="_blank" data-arts-os-animation="true">
+        </section>
+        <div class="section-demo__bg section-demo__bg_wide section-demo__bg_left bg-white" data-arts-parallax
+          data-arts-parallax-factor="0.3">
+          <div>
+            <div class="lazy-bg" data-src="img/assets/team/meet-the-team.jpg"></div>
+            <!-- <div class="lazy-bg" data-src="img/assets/sectionDemo/inner-pages-screen-1.png"></div> -->
+          </div>
+        </div>
+        <div class="section-demo__wrapper-button section-demo__wrapper-button_left d-none d-lg-flex"><a
+            class="circle-button circle-button_link js-circle-button" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="team.html"
+            target="_blank" data-arts-os-animation="true">
 
-              <!--               href="page-inner-services-1.html" target="_blank" data-arts-os-animation="true">
+            <!--               href="page-inner-services-1.html" target="_blank" data-arts-os-animation="true">
  -->
-              <div class="circle-button__outer">
-                <div class="circle-button__wrapper-label">
-                  <div class="circle-button__label small-caps">Meet The Team</div>
-                </div>
+            <div class="circle-button__outer">
+              <div class="circle-button__wrapper-label">
+                <div class="circle-button__label small-caps">Meet The Team</div>
               </div>
-              <!-- - curved label -->
-              <!-- geometry wrapper -->
-              <div class="circle-button__inner">
-                <div class="circle-button__circle">
-                  <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
-                  </svg>
-                </div>
-                <!-- browsers with touch support -->
-                <div class="circle-button__icon circle-button__icon-touch">
-                  <div class="material-icons">add</div>
-                </div>
-                <!-- - browsers with touch support -->
+            </div>
+            <!-- - curved label -->
+            <!-- geometry wrapper -->
+            <div class="circle-button__inner">
+              <div class="circle-button__circle">
+                <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                </svg>
               </div>
-              <!-- - geometry wrapper -->
-            </a>
-          </div>
+              <!-- browsers with touch support -->
+              <div class="circle-button__icon circle-button__icon-touch">
+                <div class="material-icons">add</div>
+              </div>
+              <!-- - browsers with touch support -->
+            </div>
+            <!-- - geometry wrapper -->
+          </a>
         </div>
-        <!-- - section DEMO #2 -->
-        <div class="bg-white text-center section-scroll" data-arts-theme-text="dark" data-arts-scroll-theme-text="light"
-          data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0"
-          data-arts-scroll-offset="-100">
-          <!-- section CONTENT #4 -->
-          <section class="section section-content clearfix pt-medium pb-small text-center"
-            data-arts-os-animation="data-arts-os-animation">
-            <div class="section-content__inner">
-              <div class="w-100"></div>
-              <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
-              <div class="w-100"></div>
-              <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
-                data-split-text-set="words">
-                <h2>we : </h2>
-              </div>
+      </div>
+      <!-- - section DEMO #2 -->
+      <div class="bg-white text-center section-scroll" data-arts-theme-text="dark" data-arts-scroll-theme-text="light"
+        data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0"
+        data-arts-scroll-offset="-100">
+        <!-- section CONTENT #4 -->
+        <section class="section section-content clearfix pt-medium pb-small text-center"
+          data-arts-os-animation="data-arts-os-animation">
+          <div class="section-content__inner">
+            <div class="w-100"></div>
+            <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
+            <div class="w-100"></div>
+            <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+              data-split-text-set="words">
+              <h2>we : </h2>
             </div>
-          </section>
-          <!-- - section CONTENT #4 -->
-          <!-- section FEATURES -->
-          <section class="section section-features section-grid pb-medium"
-            data-arts-os-animation="data-arts-os-animation" data-grid-columns="4" data-grid-columns-tablet="2"
-            data-grid-columns-mobile="1">
-            <div class="container">
-              <div class="row row-gutters">
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-magic-wand"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Design</div>
-                      </div>
-                      <!-- - header -->
+          </div>
+        </section>
+        <!-- - section CONTENT #4 -->
+        <!-- section FEATURES -->
+        <section class="section section-features section-grid pb-medium" data-arts-os-animation="data-arts-os-animation"
+          data-grid-columns="4" data-grid-columns-tablet="2" data-grid-columns-mobile="1">
+          <div class="container">
+            <div class="row row-gutters">
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-magic-wand"></div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-move"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Draw</div>
-                      </div>
-                      <!-- - header -->
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Design</div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-text"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Create</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-font"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Write</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-click"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Grab Attention</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-dark-light"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">See</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-responsive"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Develop</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-gutters">
-                  <div class="section-grid__item">
-                    <div class="figure-icon">
-                      <!-- icon -->
-                      <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
-                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <div class="figure-icon__icon icon-file"></div>
-                      </div>
-                      <!-- - icon -->
-                      <!-- header -->
-                      <div class="figure-icon__header">
-                        <div class="figure-feature__heading paragraph strong mt-1 mb-0">Learn</div>
-                      </div>
-                      <!-- - header -->
-                    </div>
+                    <!-- - header -->
                   </div>
                 </div>
               </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-move"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Draw</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-text"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Create</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-font"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Write</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-click"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Grab Attention</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-dark-light"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">See</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-responsive"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Develop</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-gutters">
+                <div class="section-grid__item">
+                  <div class="figure-icon">
+                    <!-- icon -->
+                    <div class="figure-icon__wrapper-icon" data-arts-cursor="data-arts-cursor"
+                      data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                      data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                      <div class="figure-icon__icon icon-file"></div>
+                    </div>
+                    <!-- - icon -->
+                    <!-- header -->
+                    <div class="figure-icon__header">
+                      <div class="figure-feature__heading paragraph strong mt-1 mb-0">Learn</div>
+                    </div>
+                    <!-- - header -->
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <!-- - section FEATURES -->
-          <!-- section CTA -->
-          <!--
+        <!-- - section FEATURES -->
+        <!-- section CTA -->
+        <!--
             <section class="section section-cta text-center section-content pt-medium pb-large bg-dark-1" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
               <div class="section__content">
                 <div class="container">
@@ -1771,8 +1727,8 @@
               </div>
             </section>
           -->
-          <!-- - section CTA -->
-        </div>
+        <!-- - section CTA -->
+      </div>
 
       </main>
       <!-- PAGE FOOTER -->
@@ -1999,6 +1955,20 @@
       }
       
     </script>
+
+  <script>
+    function isMobile() {
+      return window.innerWidth <= 1024;
+    }
+
+    // Load appropriate video based on device
+    const videoElement = document.getElementById("showreel-video");
+    if (isMobile()) {
+      videoElement.innerHTML = '<source src="img/assets/sectionVideo/mobileshowreel.mp4" type="video/mp4" />';
+    }
+  </script>
+
+
   <!-- - Slider Textures Shaders -->
   <!-- VENDOR SCRIPTS -->
   <script src="js/vendor.js"></script>
@@ -2012,6 +1982,8 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
     async></script>
+
+
 
 </body>
 
