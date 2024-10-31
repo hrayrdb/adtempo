@@ -12929,4 +12929,12 @@ small,
   50% { border-color: orange; }
 }
 
+.widgettitle a {
+  color: #333; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+.widgettitle a:hover {
+  color: #666; /* Optional hover effect */
+}
 
