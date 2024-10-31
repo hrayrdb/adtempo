@@ -12528,7 +12528,7 @@ small,
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-dark-1);
+  background-color: gray;
   margin-bottom: 0.5em;
 }
 
@@ -12607,16 +12607,22 @@ small,
 /*========================================================================
  * 105. Widget Categories
  * ======================================================================!*/
-.widget_categories ul li {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+/* Set the widget title and category items to white */
+.widget_categories .widgettitle,
+.widget_categories ul li a {
+  color: gray; /* Set text to white */
 }
 
+/* Optional: Adjust the color of the span elements if needed */
 .widget_categories ul li span {
+  color: gray; /* Set the count number text to white */
   font-size: 14px;
   line-height: 1;
+}
+
+/* Optional: Hover effect for category links */
+.widget_categories ul li a:hover {
+  color: #dddddd; /* Lighter color on hover */
 }
 
 /*========================================================================
@@ -12804,7 +12810,7 @@ small,
 .widget_recent_entries ul li {
   padding: 20px 0;
   margin-bottom: 0 !important;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  border-bottom: 1px solid gray(128, 128, 128, 0.3);
 }
 
 .widget_recent_entries ul li a {
@@ -12978,4 +12984,43 @@ small,
   transform: translate(-50%, -50%) scale(3.5);
   z-index: -10;
   opacity: 0.02;
+}
+
+.reset-icon {
+  color: #666; /* Adjust color as needed */
+  font-size: 18px;
+}
+
+.reset-icon:hover {
+  color: #333; /* Optional hover effect */
+}
+.cat-item a {
+  font-weight: normal;
+  transition: font-weight 0.3s ease, color 0.3s ease; /* Smooth transition for font weight and color */
+}
+
+.active-category {
+  font-weight: bold;
+  color: #dbdbdb; /* Optional color change */
+}
+
+/* Set the Recent Posts title to white */
+.widget_recent_entries .widgettitle {
+  color: gray; /* Set text to white */
+}
+
+/* Set the post links and dates to white */
+.widget_recent_entries ul li a {
+  color: gray; /* Set post link text to white */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.widget_recent_entries .post-date {
+  color: gray; /* Set date text to white */
+}
+
+/* Hover effect for post links */
+.widget_recent_entries ul li a:hover {
+  color: #dddddd; /* Lighter color on hover */
+  text-decoration: underline; /* Optional underline on hover */
 }
