@@ -3943,8 +3943,8 @@ div.wpcf7-acceptance-missing {
 }
 
 .list-projects__thumbnail {
-  width: 240px;
-  height: 240px;
+  width: 120px;
+  height: 120px;
 }
 
 .list-projects__thumbnail_small {
@@ -13024,3 +13024,4 @@ small,
   color: #dddddd; /* Lighter color on hover */
   text-decoration: underline; /* Optional underline on hover */
 }
+
