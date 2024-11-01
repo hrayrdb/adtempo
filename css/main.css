@@ -134,7 +134,7 @@
   --font-secondary: "Cinzel", serif;
   /* Colors */
   --color-dark-1: #111111;
-  --color-dark-2: #262626;
+  --color-dark-2: #26262673;
   --color-dark-3: #333333;
   --color-dark-4: #555555;
   --color-light-1: #eeece6;
@@ -1664,6 +1664,7 @@ a:hover {
   margin-bottom: 0;
 
 }
+
 
 /*========================================================================
  * 18. Figure Logo
