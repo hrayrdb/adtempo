@@ -406,7 +406,7 @@
               data-arts-parallax-factor="0.15">
               <video id="showreel-video" class="of-cover" autoplay="autoplay" playsinline="playsinline" muted="muted"
                 loop="loop">
-                <!-- Default source is for desktop, JavaScript will switch for mobile if needed -->
+
                 <source src="img/assets/sectionVideo/showreel.mp4" type="video/mp4" />
               </video>
             </div>
@@ -1968,16 +1968,35 @@
     </script>
 
   <script>
-    function isMobile() {
-      return window.innerWidth <= 1024;
+    function loadVideoForDevice() {
+      const videoElement = document.getElementById("showreel-video");
+
+      // Clear any existing sources
+      videoElement.innerHTML = '';
+
+      // Create new source element
+      const sourceElement = document.createElement('source');
+
+      // Set source based on device type
+      if (window.innerWidth <= 1024) {
+        sourceElement.src = "img/assets/sectionVideo/mobileshowreel.mp4";
+      } else {
+        sourceElement.src = "img/assets/sectionVideo/showreel.mp4";
+      }
+
+      sourceElement.type = "video/mp4";
+      videoElement.appendChild(sourceElement);
+      videoElement.load();  // Reload the video element to apply the new source
     }
 
-    // Load appropriate video based on device
-    const videoElement = document.getElementById("showreel-video");
-    if (isMobile()) {
-      videoElement.innerHTML = '<source src="img/assets/sectionVideo/mobileshowreel.mp4" type="video/mp4" />';
-    }
+    // Call the function on page load
+    window.addEventListener('load', loadVideoForDevice);
+
+    // Optional: Reload video on window resize (if responsive behavior is needed)
+    window.addEventListener('resize', loadVideoForDevice);
   </script>
+
+
 
 
   <!-- - Slider Textures Shaders -->
