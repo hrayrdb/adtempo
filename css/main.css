@@ -5346,6 +5346,15 @@ div.wpcf7-acceptance-missing {
   height: 100vh;
 }
 
+.section_h-s00vh {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensures no unwanted overflow */
+}
+
+
+
 .section_w-container-right {
   max-width: 100%;
   width: calc(100% - (100vw - 1140px) / 2 - 20px);
